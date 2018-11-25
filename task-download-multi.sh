@@ -78,12 +78,12 @@ if [[ $create_image = "True" ]]; then
    else
       image=$base'_'$task
    
-      if ! grep -Fxq "$image" ~/.TDWF/images.txt
-      then
-         echo $image >> ~/.TDWF/images.txt
+      #if ! grep -Fxq "$image" ~/.TDWF/images.txt
+      #then
+      #   echo $image >> ~/.TDWF/images.txt
          ctx logger info "Creating dtdwd/$image"
          sudo docker commit -m "new ${image} image" -a "rawa" ${CONTAINER_ID} dtdwd/$image
-      fi
+      #fi
   fi
 
      
