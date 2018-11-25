@@ -9,7 +9,7 @@ BLOCK_URL=$3
 
  ###### get task ID ######
    ctx logger info "download ${block} block"
-   source $PWD/Core-LifecycleScripts/get-task-ID.sh
+   source $PWD/LifeCycleScripts/get-task-ID.sh
    var=$(func $BLOCK_URL)
    task=${var,,}
    

@@ -15,7 +15,7 @@ set +e
 Image=''
 ###### get task ID ######
    
-   source $PWD/Core-LifecycleScripts/get-task-ID.sh
+   source $PWD/LifeCycleScripts/get-task-ID.sh
    var=$(func $BLOCK_URL)
    task=${var,,}
 
